@@ -3,6 +3,10 @@ local M = {
     'Mofiqul/vscode.nvim'
   },
   {
+    "ayu-theme/ayu-vim",
+    event = "VeryLazy",
+  },
+  {
     "zenbones-theme/zenbones.nvim",
     dependencies = "rktjmp/lush.nvim",
     lazy = false,

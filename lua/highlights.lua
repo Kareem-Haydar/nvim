@@ -116,7 +116,25 @@ local function update_telescope_highlights()
             results_text = "#262A31",
             preview_text = "#262A31",
             bg = "#171512"
-        }
+        },
+        ["ayu"] = {
+            prompt_highlight = "#e6b450",
+            results_highlight = "#e67e50",
+            preview_highlight = "#e6d450",
+            prompt_text = "#262a31",
+            results_text = "#262a31",
+            preview_text = "#262a31",
+            bg = "#171512"
+        },
+        ["onedark_dark"] = {
+            prompt_highlight = "#e6b450",
+            results_highlight = "#e06c75",
+            preview_highlight = "#c678dd",
+            prompt_text = "#1e2024",
+            results_text = "#1e2024",
+            preview_text = "#1e2024",
+            bg = "#1e2024"
+        },
         -- Add other colorschemes and their colors...
     }
 

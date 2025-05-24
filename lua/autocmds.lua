@@ -6,7 +6,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.o.laststatus = 3
-vim.o.cmdheight = 1
+vim.o.cmdheight = 0
 
 vim.diagnostic.config({ update_in_insert = true })
 vim.opt.signcolumn = "yes"
@@ -49,4 +49,4 @@ vim.lsp.inlay_hint.enable(true)
 
 package.path = package.path .. vim.fn.getcwd() .. "/?.lua;" .. vim.fn.getcwd() .. "/lua/?.lua;" .. vim.fn.getcwd() .. "/plugin/?.lua;"
 
-vim.cmd[[ colorscheme rosebones ]]
+vim.cmd[[ colorscheme onedark_dark ]]
