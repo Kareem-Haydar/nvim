@@ -133,7 +133,7 @@ local function update_telescope_highlights()
             prompt_text = "#1e2024",
             results_text = "#1e2024",
             preview_text = "#1e2024",
-            bg = "#1e2024"
+            bg = "NONE"
         },
         -- Add other colorschemes and their colors...
     }

@@ -3,12 +3,12 @@ require("telescope").setup({
     ["ui-select"] = {
       require("telescope.themes").get_dropdown({
         layout_strategy = "cursor",
-        borderchars = { prompt = { " ", " ", " ", " ", " ", " ", " ", " " }, results = { " ", " ", " ", " ", " ", " ", " ", " " }, preview = { " ", " ", " ", " ", " ", " ", " ", " " }, },
+        --borderchars = { prompt = { " ", " ", " ", " ", " ", " ", " ", " " }, results = { " ", " ", " ", " ", " ", " ", " ", " " }, preview = { " ", " ", " ", " ", " ", " ", " ", " " }, },
       }),
     },
   },
   defaults = {
-    borderchars = { prompt = { " ", " ", " ", " ", " ", " ", " ", " " }, results = { " ", " ", " ", " ", " ", " ", " ", " " }, preview = { " ", " ", " ", " ", " ", " ", " ", " " }, },
+    --borderchars = { prompt = { " ", " ", " ", " ", " ", " ", " ", " " }, results = { " ", " ", " ", " ", " ", " ", " ", " " }, preview = { " ", " ", " ", " ", " ", " ", " ", " " }, },
     border = true,
     prompt_prefix = "󰍉 ",
     selection_caret = "> ",
