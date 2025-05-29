@@ -10,6 +10,7 @@ vim.o.cmdheight = 0
 
 vim.diagnostic.config({ update_in_insert = true })
 vim.opt.signcolumn = "yes"
+vim.opt.termguicolors = true
 
 local signs = {
 	Error = "", -- Error icon
@@ -50,3 +51,5 @@ vim.lsp.inlay_hint.enable(true)
 package.path = package.path .. vim.fn.getcwd() .. "/?.lua;" .. vim.fn.getcwd() .. "/lua/?.lua;" .. vim.fn.getcwd() .. "/plugin/?.lua;"
 
 vim.cmd[[ colorscheme onedark_dark ]]
+
+vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#969696", italic = true })

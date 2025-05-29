@@ -58,11 +58,32 @@ local M = {
     'dstein64/vim-startuptime',
   },
   {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require("configs.dashboard")
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+  {
+    'akinsho/bufferline.nvim',
+    enabled = false,
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      require("configs.bufferline")
+    end
+  },
+  {
     'nvim-lua/plenary.nvim',
     lazy = true,
   },
   {
     "nvim-telescope/telescope-ui-select.nvim",
+    lazy = true,
+  },
+  {
+    'nvim-telescope/telescope-project.nvim',
     lazy = true,
   },
   {
